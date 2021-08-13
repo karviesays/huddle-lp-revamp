@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --violet:  hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 40%, 60%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: url('images/bg-mobile.svg')no-repeat top;
+    background-size: 100%;
+    background-color: var(--violet);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+   display: flex;
+   justify-content: center;
+}
+
+.header-inner {
+    max-width: 375px;
+}
+
+.header-img-grp {
+    padding: 2rem;
+}
+
+.logo {
+    display: block;
+    max-width: 100%;
+    width: 40vw;
+    height: auto;
+    padding-bottom: 3rem;
+    
+}
+.mockup {
+    display: block;
+    max-width: 100%;
+    width: 80vw;
+    height: auto;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    color: #fff;
+    max-width: 80%;
+    margin: 1rem auto;
+}
+
+.title {
+    font-size: 6vw;
+}
+
+.hero-inner p {
+    line-height: 1.5;
+}
+
+.btn-reg {
+    display: inline-block;
+    background-color:#fff;
+    padding: .6rem 4.5rem;
+    border-radius: 50px;
+    font-size: .85rem;
+    color: var(--violet);
+    -webkit-box-shadow: 1px 2px 21px 5px rgba(0,0,0,0.32); 
+    box-shadow: 1px 2px 21px 5px rgba(0,0,0,0.32);
+}
+
+.btn-reg:hover{
+    background-color: var(--soft-magenta);
+    color: #fff;
+}
+
+/* Social Links */
+.social {
+    margin-top: 3rem;
+}
+.social-inner {
+    display: flex;
+    justify-content: center;
+}
+
+
+.social-links {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: auto .2rem;
+    border-radius: 100%;
+}
+
+.fab{
+    padding: .4rem;
+}
+
+.social-links:hover{
+    border: 1px solid var(--soft-magenta);
+    color: var(--soft-magenta);
+
+}
+
+@media (min-width: 900px){
+    body {
+        background: url('images/bg-desktop.svg')no-repeat left center;
+        background-size: 100%;
+        background-color: var(--violet);
+    }
+    .header-inner {
+        max-width: 90rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header-inner {
+        padding: 0;
+    }
+    .logo {
+        margin: 0;
+        width: 15vw;
+    }
+
+    .mockup {
+        margin:0;
+        width: 50vw;
+    }
+
+    .hero {
+        grid-column: 2 / 3;
+        align-self: center;
+        text-align: start;
+    }
+
+    .hero-inner {
+        padding-top:8vw;
+    }
+    .title {
+        font-size: 3vw;
+    }
+    .social {
+        grid-column: 2 / 3;
+        justify-self: end;
+        margin-right: 1rem;
+    }
+}
