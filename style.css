@@ -136,11 +136,11 @@ a {
     }
 
     .header-img-grp {
-        padding-top: 2rem;
+        padding-top: 3rem;
         padding-left: 3rem;
     }
     .logo {
-        width:30%;
+        width:25%;
         padding-top: 1rem;
         padding-bottom: 4rem;
     }
@@ -149,7 +149,7 @@ a {
     }
 
     .hero {
-        flex: 1;
+        flex: 1 1 40%;
         text-align: start;
         display: flex;
         align-self: center;
@@ -162,7 +162,7 @@ a {
     }
 
     .hero-inner p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .title {
         font-size: 3vw;
@@ -175,5 +175,9 @@ a {
         display: flex;
         justify-content: end;
         margin-right: 2rem;
+    }
+
+    .social-links {
+        margin-right: .6rem;
     }
 }
