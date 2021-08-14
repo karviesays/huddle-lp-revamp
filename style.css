@@ -141,6 +141,8 @@ a {
     }
     .logo {
         width:30%;
+        padding-top: 1rem;
+        padding-bottom: 4rem;
     }
     .mockup {
         width: 100%;
@@ -154,8 +156,9 @@ a {
     }
 
     .hero-inner {
-        padding-left: 1rem;
-        flex-basis: 80%;
+        padding-top: 3rem;
+        padding-left: 2rem;
+        flex-basis: 90%;
     }
 
     .hero-inner p {
